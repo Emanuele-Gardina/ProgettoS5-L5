@@ -17,7 +17,13 @@ html {
   border-bottom: 1px solid black;
 }
 
-.navBar {
+.nav-container {
+  position: sticky;
+  top: 0px;
+  z-index: 999;
+}
+
+.navbar {
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -33,7 +39,7 @@ ul li {
   padding-inline: 0.5rem;
 }
 
-.getStarted {
+.get-started {
   border-radius: 20px;
   background-color: black;
   color: white;
@@ -70,7 +76,7 @@ header p {
   padding-bottom: 2rem;
 }
 
-.starTreading {
+.start-reading {
   border-radius: 20px;
   background-color: black;
   color: white;
@@ -94,7 +100,7 @@ section {
   margin: auto;
 }
 
-.sectionDiv,
+.section-div,
 .list {
   border-bottom: 1px solid rgb(212, 208, 208);
 }
@@ -117,7 +123,7 @@ section {
   font-weight: bold;
 }
 
-.authorIcon {
+.author-icon {
   display: flex;
   align-items: center;
 }
@@ -166,40 +172,41 @@ article {
   display: flex;
 }
 
-.authorImg {
+.author-img {
   width: 27px;
   border-radius: 50%;
 }
 
-.artAuthor {
+.art-author {
   font-size: 11px;
   padding-left: 0.9rem;
   font-weight: bold;
 }
 
-.artCard {
+.art-card {
   width: 85%;
+  margin-bottom: 2rem;
 }
 
-.sideImage img {
+.side-image img {
   max-height: 15vh;
 }
 
-.artFoot {
+.art-foot {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.artFootImg {
+.art-foot-img {
   width: 35px;
 }
 
-.artFoot p {
+.art-foot p {
   font-size: 10px;
 }
 
-.highLight {
+.highlight {
   background-color: rgba(188, 187, 187, 0.564);
   padding: 5px 10px;
   border-radius: 20px;
@@ -208,31 +215,33 @@ article {
 .card1 {
   display: flex;
   flex-direction: column;
-  margin-bottom: 2rem;
+  justify-content: space-between;
+
+  width: 100%;
 }
 
-.artIcon {
+.art-icon {
   display: flex;
   align-items: center;
   padding-bottom: 1rem;
 }
 
-.artContent1 h3 {
+.art-content1 h3 {
   font-weight: bold;
   font-size: 1.3rem;
   padding-bottom: 0.5rem;
 }
 
-.artContent1 p {
+.art-content1 p {
   color: gray;
   padding-bottom: 0.5rem;
 }
 
-.artContent1 p:first-of-type {
+.art-content1 p:first-of-type {
   font-size: 12px;
 }
 
-.discoverContainer {
+.discover-container {
   width: 50%;
 }
 
@@ -267,20 +276,20 @@ footer ul li a {
   line-height: 30px;
 }
 
-@media screen and (max-width: 480px) {
-  .navBar li:nth-child(-n + 3),
+@media (max-width: 510px) {
+  .navbar li:nth-child(-n + 3),
   .mmm {
     display: none;
   }
 
-  .navBar,
+  .navbar,
   header,
   section,
   article {
     width: 83%;
   }
 
-  .navBar,
+  .navbar,
   li,
   button {
     font-size: 11px;
@@ -290,7 +299,7 @@ footer ul li a {
     font-size: 3rem;
   }
 
-  .header p {
+  header p {
     font-size: 0.7rem;
   }
 
@@ -303,19 +312,86 @@ footer ul li a {
     justify-content: flex-start;
   }
 
-  .article {
+  article {
     flex-direction: column;
+    flex-wrap: nowrap;
   }
 
   .div1 {
     order: 1;
   }
 
+  .side-image img {
+    height: 15vh;
+  }
+
   .list {
     justify-content: space-between;
   }
 
-  .discoverContainer {
+  .discover-container {
     order: 0;
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .mmm {
+    display: none;
+  }
+
+  .navbar,
+  header,
+  section,
+  article {
+    width: 90%;
+  }
+
+  .navbar,
+  li,
+  button {
+    font-size: 12px;
+  }
+
+  .card {
+    max-width: 250px;
+  }
+
+  .author {
+    font-size: 12px;
+  }
+
+  article {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .div1 {
+    order: 1;
+  }
+
+  .side-image img {
+    height: 15vh;
+  }
+
+  .list {
+    justify-content: space-between;
+  }
+
+  .list ul li {
+    font-size: 15px;
+  }
+
+  .discover-container {
+    order: 0;
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1045px) {
+  .mmm {
+    display: none;
   }
 }
