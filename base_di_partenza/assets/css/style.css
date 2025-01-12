@@ -155,12 +155,14 @@ article {
 }
 
 .authorImg {
-  width: 35px;
+  width: 27px;
   border-radius: 50%;
 }
 
 .artAuthor {
-  font-size: 10px;
+  font-size: 11px;
+  padding-left: 0.9rem;
+  font-weight: bold;
 }
 
 .artCard {
@@ -203,10 +205,6 @@ article {
   padding-bottom: 1rem;
 }
 
-.artIcon img {
-  padding-right: 1rem;
-}
-
 .artContent1 h3 {
   font-weight: bold;
   font-size: 1.3rem;
@@ -227,7 +225,7 @@ article {
 }
 
 .discover h4 {
-  font-size: 0.7rem;
+  font-size: 1rem;
   text-transform: uppercase;
   font-weight: bold;
   padding-bottom: 1.5rem;
@@ -252,7 +250,7 @@ footer {
 
 footer ul li a {
   text-decoration: none;
-  font-size: 12px;
+  font-size: 13px;
   color: rgb(105, 104, 104);
   line-height: 30px;
 }
