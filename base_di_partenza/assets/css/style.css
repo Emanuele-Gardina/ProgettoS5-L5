@@ -17,7 +17,7 @@ html {
   border-bottom: 1px solid black;
 }
 
-.navbar {
+.navBar {
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -33,11 +33,16 @@ ul li {
   padding-inline: 0.5rem;
 }
 
-.getstarted {
+.getStarted {
   border-radius: 20px;
   background-color: black;
   color: white;
   padding: 5px 20px;
+}
+
+.header-div {
+  position: relative; /* diamo riferimento alla posizione Absolute */
+  overflow: hidden; /* nasconde la parte in eccesso del contenitore*/
 }
 
 header {
@@ -46,6 +51,12 @@ header {
   width: 70%;
   margin: auto;
   background-color: #ffc017;
+}
+
+header img {
+  position: absolute; /* diciamo alla immagine di spostarsi dove vogliamo noi */
+  right: 0;
+  top: -10px;
 }
 
 h1 {
@@ -59,7 +70,7 @@ header p {
   padding-bottom: 2rem;
 }
 
-.startreading {
+.starTreading {
   border-radius: 20px;
   background-color: black;
   color: white;
@@ -125,6 +136,7 @@ section {
 .icon {
   width: 25px;
   border-radius: 50%;
+  margin-right: 0.5rem;
 }
 
 .container1 .author,
@@ -170,7 +182,7 @@ article {
 }
 
 .sideImage img {
-  height: 120px;
+  max-height: 15vh;
 }
 
 .artFoot {
@@ -253,4 +265,57 @@ footer ul li a {
   font-size: 13px;
   color: rgb(105, 104, 104);
   line-height: 30px;
+}
+
+@media screen and (max-width: 480px) {
+  .navBar li:nth-child(-n + 3),
+  .mmm {
+    display: none;
+  }
+
+  .navBar,
+  header,
+  section,
+  article {
+    width: 83%;
+  }
+
+  .navBar,
+  li,
+  button {
+    font-size: 11px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .header p {
+    font-size: 0.7rem;
+  }
+
+  .card {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .flex-box {
+    justify-content: flex-start;
+  }
+
+  .article {
+    flex-direction: column;
+  }
+
+  .div1 {
+    order: 1;
+  }
+
+  .list {
+    justify-content: space-between;
+  }
+
+  .discoverContainer {
+    order: 0;
+  }
 }
