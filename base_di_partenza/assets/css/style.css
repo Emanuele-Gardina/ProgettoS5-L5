@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-family: "Roboto", serif;
+}
+
 .nav-container,
 .header-div {
   background-color: #ffc017;
@@ -20,7 +24,7 @@
   background-color: #ffc017;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  width: 60%;
+  width: 70%;
   margin: auto;
 }
 
@@ -39,7 +43,7 @@ ul li {
 header {
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
-  width: 60%;
+  width: 70%;
   margin: auto;
   background-color: #ffc017;
 }
@@ -75,9 +79,13 @@ h3 {
 
 section {
   padding-top: 25px;
-  width: 60%;
+  width: 70%;
   margin: auto;
-  border-bottom: 1px solid black;
+}
+
+.sectionDiv,
+.list {
+  border-bottom: 1px solid rgb(212, 208, 208);
 }
 
 .flex-box {
@@ -88,14 +96,30 @@ section {
 .card {
   display: flex;
   width: 33.333%;
+  padding-block: 1rem;
 }
 
-.container1 {
+.number {
+  padding-right: 1rem;
+  opacity: 0.1;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.authorIcon {
   display: flex;
+  align-items: center;
+}
+
+.author {
+  font-weight: bold;
+  color: gray;
 }
 
 .foot {
   display: flex;
+  justify-content: space-between;
+  color: gray;
 }
 
 .icon {
@@ -103,8 +127,132 @@ section {
   border-radius: 50%;
 }
 
-.author,
-.icon {
+.container1 .author,
+.cointainer1 .icon {
   display: inline-block;
   vertical-align: middle;
+}
+
+.container1 > p:last-of-type {
+  font-weight: bold;
+  padding-block: 1rem;
+}
+
+article {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  padding-top: 3rem;
+}
+
+.div1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.div2 {
+  display: flex;
+}
+
+.authorImg {
+  width: 35px;
+  border-radius: 50%;
+}
+
+.artAuthor {
+  font-size: 10px;
+}
+
+.artCard {
+  width: 85%;
+}
+
+.sideImage img {
+  height: 120px;
+}
+
+.artFoot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.artFootImg {
+  width: 35px;
+}
+
+.artFoot p {
+  font-size: 10px;
+}
+
+.highLight {
+  background-color: rgba(188, 187, 187, 0.564);
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.card1 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.artIcon {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.artIcon img {
+  padding-right: 1rem;
+}
+
+.artContent1 h3 {
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding-bottom: 0.5rem;
+}
+
+.artContent1 p {
+  color: gray;
+  padding-bottom: 0.5rem;
+}
+
+.artContent1 p:first-of-type {
+  font-size: 12px;
+}
+
+.discoverContainer {
+  width: 50%;
+}
+
+.discover h4 {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 1.5rem;
+}
+
+.list li {
+  display: inline-block;
+  border: 1px solid rgb(202, 198, 198);
+  color: rgb(105, 104, 104);
+  font-size: 10px;
+  padding: 5px 8px;
+  margin-bottom: 0.5rem;
+}
+
+.list div:last-of-type {
+  margin-bottom: 1.5rem;
+}
+
+footer {
+  padding-top: 1.5rem;
+}
+
+footer ul li a {
+  text-decoration: none;
+  font-size: 12px;
+  color: rgb(105, 104, 104);
+  line-height: 30px;
 }
